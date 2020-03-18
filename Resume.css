@@ -1,0 +1,102 @@
+/*navigation styling*/
+/*na li means that it will only 
+apply to the list items in nav*/
+nav li{
+	display: inline;
+	font-weight: normal;
+	font-size: 25px;
+	color: indigo;
+	font-family: sans-serif;
+	margin-right: 40px;
+}
+/*gets rid of the underline of the 
+link because its attached to the anchor line*/
+nav a{
+	text-decoration: none;
+}
+/*text changes color when mouse hovers over it*/
+nav a:hover {
+	text-decoration: underline;
+	color: darkgray;
+}
+
+
+/*adding a background image*/
+/*html{
+	background-image: url(https://images.unsplash.com/photo-1584346884836-46e6d0d72db4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+
+}
+*/
+button {
+	boder: 2px solid black;
+	padding: 10px 25px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+button:hover{
+	background: black;
+	color: lightblue;
+}
+
+.redButton {
+	border: 2px solid red;
+}
+.redButton:hover {
+	background-color: red;
+}
+.blueButton {
+	border: 2px solid blue;
+}
+.blueButton:hover{
+	background-color: blue;
+}
+
+
+
+h1{
+	color: black;
+}
+h2 {
+	color: indigo;
+	font-size: 20px;
+}
+
+img {
+	border: 5px dotted indigo;
+}
+
+/*use commas to to separate multiple 
+selectors and apply the same rule to all*/
+
+table,td,th{
+	border: 3px solid black;
+}
+
+table{
+	background-color: yellow;
+	padding: 15px;
+	margin: 0 auto;/*when there are two 
+	numbers, the firstnumber is for top+bottom 
+	the secon if dor right+left*/
+}
+th, td {
+	background-color: lightblue;
+	padding: 5px;
+}
+.tableheadingrow{
+	margin-bottom: 10px;
+}
+/* the # signals and id*/
+#placesheader{
+	color: blue;
+}
+/* the . signals a class*/ 
+.educationimage {
+	transform: rotate(180deg);
+	margin-bottom: : : 10px;
+}

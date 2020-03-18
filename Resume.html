@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Melina's Resume Website</title>
+<!-- another example of css coding  that applies to more than one line-->
+
+<!-- the h1 rule applies to all h1s on page-->
+
+<!-- this is a link to our external stylesheet-->
+<link type="text/css" rel="stylesheet" href="Resume.css"/>
+	<style>
+		/* this is a css comment
+		this is an internal stylesheet
+		*/
+		/*h1{
+			color: red;
+		}
+		*/
+		
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="Resume.html">Resume</a></li>
+			<li><a href="ContactUs.html">Contact Us</a></li>
+			<li><a href="Kitchen_Lab.html"> Best Restaurants</a></li>
+			<li><a href="My_Kitchen.html"> My Kitchen</a></li>
+		</ul>
+	</nav>
+
+
+	<!-- example of Inline styling using CSS code (not the best method to use because of repitition-->
+	<h1 style="font-size: 30px; color: blue;">Melina Alejos Whitlock</h1>
+	<!--This ia a comment, this will be ingored by broswer-->
+	<!-- CTRL+/ shortcut for comments in sublime -->
+	<p> 2000 Kello Dr, Greensboro NC 27455</p>
+	<p> cell:(336)689-4481</p>
+
+
+	<h2> Education</h2>
+
+	<ul>
+		<li><a href="https://salem.edu" target="_blank">Salem College</a>
+		</li>
+	
+		<p>Graduated 2015 with a Bachelor of Science in Biochemistry, Biology, Chemistry</p>
+
+		<img class="educationimage" src="https://upload.wikimedia.org/wikipedia/en/f/f3/Salem_College_Seal.png" width="200px"/>
+		<li>GCS ACT</li>
+		<p> Graduated 2017 with Teaching License</p>
+	</ul>
+
+	<br>
+
+	<h2> Work Experience</h2>
+	
+	<ol>
+		<li>Alejos Transportation
+		<ul>
+			<li>2011-2018</li>
+			<li>Medical Interpreter and Transportation Provider</li>
+		</ul> 
+		<li>Firehouse Subs</li>
+		<ul>
+			<li>2012-2015</li>
+			<li>Assistant Manager</li>
+		</ul>
+		<li> Tutor</li>
+		<ul>
+			<li>2012-2016</li>
+			<li>Math and Science tutor for High School and College</li>
+		</ul>
+		<li>Asinex</li>
+		<ul>
+			<li>2014-2016 </li>
+			<li>Pharmacutial Scientist</li>
+		</ul>
+		<li>Forsyth County</li>
+		<ul>
+			<li>2016-2017</li>
+			<li>Substitute Teacher</li>
+		</ul>
+		<li>Guilford County</li>
+		<ul>
+			<li>2017-2019</li>
+			<li>Middle School Science Teacher(6th-8th)</li>
+		</ul>
+	</ol>
+	<br>
+<!-- the id will apply only to this specific section/header-->
+	<h2 id="placesheader">Places Where I have Lived</h2>
+	<h4 >
+		<table>
+		<tr class="tableheadingrow">
+			<th>State</th>
+			<th>City</th>
+			<th>Zip</th>
+			<th>Image</th>
+		</tr>
+		<tr>
+			<td>North Carolina</td>
+			<td>High Point</td>
+			<td>27263</td>
+			<td><img src="https://media.pri.org/s3fs-public/images/2018/05/skyline%201.jpg" alt="Downtown City of High Point, NC" width="100px"/> </td>
+		</tr>
+		<tr>
+			<td>Michocan,Mexico</td>
+			<td>Maravatio</td>
+			<td>N/A</td>
+			<td> <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Mexico_%281916-1934%29.svg" alt="Flag of Mexico" width="50px"/></td>
+		</tr>
+		<tr>
+			<td>North Carolina</td>
+			<td> Winston-Salem</td>
+			<td>27103</td>
+			<td> <img src="https://visitwinstonsalem.com/images/slideshow/winstonsalemskyline.jpg" alt="Downtown City of Winston-Salem" width="100px"/></td>
+		</tr>
+	</table>
+</h4>
+</body>
+</html>
