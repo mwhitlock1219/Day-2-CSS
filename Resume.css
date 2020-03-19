@@ -1,28 +1,89 @@
-/*navigation styling*/
-/*na li means that it will only 
-apply to the list items in nav*/
-nav li{
-	display: inline;
-	font-weight: normal;
-	font-size: 25px;
-	color: indigo;
-	font-family: sans-serif;
-	margin-right: 40px;
+/*START--Top Navigation Bar with Dropdown*/
+.navbar ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: lightseagreen;
 }
-/*gets rid of the underline of the 
-link because its attached to the anchor line*/
-nav a{
-	text-decoration: none;
+.navbar li {
+   float: left;
 }
-/*text changes color when mouse hovers over it*/
-nav a:hover {
-	text-decoration: underline;
-	color: darkgray;
+.navbar li a, .dropbtn {
+   display: inline-block;
+   color: black;
+   font-family: 'Lobster', cursive;
+   text-align: center;
+   font-size: 30px;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+.navbar li a:hover, .dropdown:hover .dropbtn {
+   background-color: gainsboro;
+   color:mediumslateblue;
+}
+.navbar li.dropdown {
+   display: inline-block;
+}
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: gainsboro;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px white;
+}
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+}
+.dropdown-content a:hover {
+	background-color: black;
+}
+.dropdown:hover .dropdown-content {
+   display: block;
 }
 
+/*END--Top Navigation Bar with Dropdown*/
+/*
+
+
+*/
+/*START-- Navigation Bar at the Bottom*/
+
+ nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightseagreen;
+}
+
+nav li {
+  float: left;
+}
+
+li a:hover{ 
+	background-color: gainsboro;
+   color:mediumslateblue;
+ }
+nav li a {
+  display: block;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*END-- Navigation Bar at the Bottom*/
 
 /*adding a background image*/
-/*html{
+/*
+html{
 	background-image: url(https://images.unsplash.com/photo-1584346884836-46e6d0d72db4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -31,20 +92,93 @@ nav a:hover {
 
 }
 */
+/*body {
+   background-image: url("https://images.unsplash.com/photo-1499159058454-75067059248a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-attachment: scroll;
+}
+*/
+/*Resume Contact Info*/
+.contactinfo p{
+	text-align: center;
+	font-size: 15px;
+}
+.pageheader {
+  background-color: mediumslateblue;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+.fancy1 h1{
+	font-family: 'Liu Jian Mao Cao', cursive;
+	font-size: 75px;
+	border-color: mediumslateblue;
+}
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+.resumename h2 {
+	text-align: center;
+	color: black;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+
 button {
-	boder: 2px solid black;
+	border: 2px solid black;
 	padding: 10px 25px;
 	display: block;
 	margin-bottom: 20px;
+	border-radius: 50px;
 }
 
 button:hover{
-	background: black;
-	color: lightblue;
+	background: yellow;
+	color: darkblue;
 }
 
 .redButton {
 	border: 2px solid red;
+
 }
 .redButton:hover {
 	background-color: red;
@@ -60,12 +194,15 @@ button:hover{
 
 h1{
 	color: black;
+	font-family: Georgia, serif;
+	text-align: center;
 }
 h2 {
-	color: indigo;
-	font-size: 20px;
+	color:indigo;
+	font-size: 50px;
 }
 
+.
 img {
 	border: 5px dotted indigo;
 }
@@ -74,29 +211,29 @@ img {
 selectors and apply the same rule to all*/
 
 table,td,th{
-	border: 3px solid black;
+	border: 1px solid black;
 }
 
 table{
 	background-color: yellow;
-	padding: 15px;
-	margin: 0 auto;/*when there are two 
-	numbers, the firstnumber is for top+bottom 
-	the secon if dor right+left*/
+	padding: 1px;
+	margin: 0 auto;
 }
 th, td {
 	background-color: lightblue;
-	padding: 5px;
+	padding: 2px;
 }
 .tableheadingrow{
 	margin-bottom: 10px;
 }
-/* the # signals and id*/
-#placesheader{
-	color: blue;
-}
+
 /* the . signals a class*/ 
 .educationimage {
 	transform: rotate(180deg);
 	margin-bottom: : : 10px;
 }
+
+form input, form label, form select {
+	display:block;
+}
+
